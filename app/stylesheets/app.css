@@ -1,0 +1,19 @@
+.forkme img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  z-index: 1000;
+}
+
+.page-header {
+  border-bottom: medium none;
+}
+.page-header h1 {
+  font-family: 'Trade Winds', cursive;
+}
+
+.nav-tabs {
+  margin-bottom: 15px;
+}
+
