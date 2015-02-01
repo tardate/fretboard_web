@@ -52,7 +52,7 @@ The information web site will run by default at http://localhost:4567
 
 The build status proxy will run by default at http://localhost:4567/status.csv
 
-You can use `curl` to inspect the raw build status response like this, which will also dump the repsonse to `status.trace`:
+You can use `curl` to inspect the raw build status response like this, which will also dump the response to `status.trace`:
 
     curl -i -0 --raw --trace status.trace "http://localhost:4567/status.csv"
 
