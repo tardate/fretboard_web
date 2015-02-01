@@ -3,10 +3,10 @@ gem 'sinatra'
 gem 'unicorn'
 gem 'activesupport'
 gem 'nokogiri'
+gem 'rake'
+gem 'rspec'
 
 group :development, :test do
-  gem 'rake'
   gem 'rack-test'
-  gem 'rspec'
   gem 'guard-rspec'
 end
