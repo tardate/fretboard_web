@@ -1,4 +1,5 @@
 # Fretboard Web App
+[![Build Status](https://travis-ci.org/tardate/fretboard_web.svg?branch=master)](https://travis-ci.org/tardate/fretboard_web)
 
 This is a simple sinatra app that includes two components:
 
@@ -17,13 +18,25 @@ git repository.
 
 ## Installation for Development
 
-To hack on this, you need a recent `npm` installed, then run:
+To hack on the web front-end, you need a recent `npm` installed, then run:
 
     $ npm install
 
 Use grunt to just-in-time compile coffeescript sources as you work:
 
     $ grunt watch
+
+To hack on the sinatra web app, make sure you have a valid ruby runtime, then bundle:
+
+    $ bundle install
+
+Run tests:
+
+    $ bundle exec rake
+
+Guard is included to for watching code and running specs as you go:
+
+    $ bundle exec guard
 
 
 ## Running Locally
