@@ -17,3 +17,6 @@
   margin-bottom: 15px;
 }
 
+.thumbnail img {
+  image-orientation: from-image;
+}

@@ -6,9 +6,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>My Toolbox</title>
-  <meta name="description" content="A collection of general purpose utilities for web development">
-  <meta name="keywords" content="">
+  <title>The Fretboard</title>
+  <meta name="description" content="all about the fretboard Arduino multi-project build status indictor">
+  <meta name="keywords" content="Arduino,continuous integration,build status,project,maker">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
@@ -22,7 +22,8 @@
 
   <div class="container">
     <div class="page-header">
-      <h1>The Fretboard</h1>
+      <h1>The Fretboard <small>build like a rockstar</small></h1>
+
     </div>
 
 
@@ -39,23 +40,237 @@
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="home">
             <p>
-              home
+              The Fretboard is a pretty simple Arduino project that visualizes the build status of up to 24 projects with an addressable LED array.
+              The latest incarnation of the project is housed in an old classical guitar &#133; hence the name ;-)
+            </p>
+            <p>
+              It's all open-sourced, so check out the "Resources" page for code. Feel free to borrow any ideas for your own build.
+            </p>
+            <br/>
+            <p class="text-center">
+              <iframe width="420" height="315" src="https://www.youtube.com/embed/x14wLOtSR0M" frameborder="0" allowfullscreen></iframe>
             </p>
           </div>
           <div role="tabpanel" class="tab-pane" id="thebuild">
             <p>
-              thebuild
+              The build has been a slow burn &#133; 3 months of little packages of components arriving from China, and another couple
+              of months procrastinating over different ideas for housing the project - the physical build is far more involved than the
+              electronics, which couldn't be simpler!
             </p>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="app/images/build/01_led_delivery.jpg" alt="...">
+                  <div class="caption">
+                    <h4>LED Array Arrives</h3>
+                    <small class="text-muted">
+                      This is where it started - taking delivery of a WS2811-based addressable LED Strip from
+                      <a href="http://www.aliexpress.com/item/IP68-12mm-WS2811-as-WS2801-led-pixel-module-IP68-waterproof-DC5V-full-color-RGB-50pcs-a/1932649085.html">aliexpress</a> for all of USD$17.
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="app/images/build/02_arduino_ready_to_go.jpg" alt="...">
+                  <div class="caption">
+                    <h4>Arduino Build</h3>
+                    <small class="text-muted">
+                      The easy part - not many components involved. All driven from a 5V 2A power supply.
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="app/images/build/09_electronics_inside.jpg" alt="...">
+                  <div class="caption">
+                    <h4>Ghost in the Shell</h3>
+                    <small class="text-muted">
+                      As installed within the guitar body. Mounting the Arduino is a bit old school, but works OK.
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="app/images/build/03_the_guitar.jpg" alt="...">
+                  <div class="caption">
+                    <h4>The Guitar</h3>
+                    <small class="text-muted">
+                      I bought this in Brunswick about 25 years ago, and it's the one guitar to survive all my many moves since,
+                      more for sentimental reasons than any sonorous character.
+                      Finally, for the chop!
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="app/images/build/04_on_the_chopping_block.jpg" alt="...">
+                  <div class="caption">
+                    <h4>On The Block</h3>
+                    <small class="text-muted">
+                      For those about to chop, we salute you.
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="app/images/build/05_guitar_prep.jpg" alt="...">
+                  <div class="caption">
+                    <h4>Sliced and Drilled</h3>
+                    <small class="text-muted">
+                      Drilling clean holes through the neck turned out to be troublesome.
+                      Perhaps my rusty toolsmanship, or just tinder dry wood, but I managed to splinter what should have been smooth bores for the LEDs.
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="app/images/build/06_guitar_stripped.jpg" alt="...">
+                  <div class="caption">
+                    <h4>Stripped</h3>
+                    <small class="text-muted">
+                      A quick strip back of the gundgy neck and body before painting.
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="app/images/build/07_undercoat.jpg" alt="...">
+                  <div class="caption">
+                    <h4>Undercoat</h3>
+                    <small class="text-muted">
+                      Painting begins with a white undercoat in acrylic.
+                      Here you can clearly see one LED hole I fluffed.
+                    </small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="app/images/build/08_painted.jpg" alt="...">
+                  <div class="caption">
+                    <h4>Painted Lady</h3>
+                    <small class="text-muted">
+                      The somewhat amateurish paint-job complete!
+                      It has a gloss varnish finish.
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="app/images/build/10_backpanel.jpg" alt="...">
+                  <div class="caption">
+                    <h4>Backpanel</h3>
+                    <small class="text-muted">
+                      Ethernet and power connectors.
+                      You can also see the LED array strung along the back of the neck -
+                      turned out no special tie-down required for the wiring.
+                    </small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="app/images/build/11_up_and_running.jpg" alt="...">
+                  <div class="caption">
+                    <h4>Up And running!</h3>
+                    <small class="text-muted">
+                      Bench test, and all's looking good.
+                      Only 16 LEDs alight, because that's the number of projects I have on CI at the moment -
+                      the remaining 8 LEDs will be used as more projects added to the CI server.
+                    </small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="app/images/build/12_up_and_running.jpg" alt="...">
+                  <div class="caption">
+                    <h4>With Drama</h3>
+                    <small class="text-muted">
+                      Enter the arena..
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
           </div>
           <div role="tabpanel" class="tab-pane" id="howitworks">
             <p>
-              howitworks
+              The heart of the project is an Arduino with an Ethernet Shield.
+              It polls the web for current build status, parses the result, and drives an addressable LED array
+              to display the status of up to 24 projects.
+              Note: the 24-project limit is an artificial one, imposed by the physical housing on a guitar neck
+              (2 projects per fret to the 12th fret).
+            </p>
+            <p>
+              See the
+              <a href="https://github.com/tardate/LittleArduinoProjects/tree/master/FretBoard">FretBoard</a>
+              GitHub repository for the Arduino code and more details of the on-board processing.
+            </p>
+            <p>
+              The Arduino has limited memory and networking support, so to simplify process of getting
+              build status, the request is proxied via a site which offers the build status in a simplified CSV format over HTTP.
+            </p>
+            <p>
+              A suitable proxy that can handle the CruiseControl XmlStatusReport format is included in the
+              <a href="https://github.com/tardate/fretboard_web">repository for this web application</a>.
+            </p>
+
+            <h4>Electronics Layout</h4>
+            <p>
+              <img src="app/images/circuits/FretBoard_bb.jpg" alt="..." class="img-responsive">
+            </p>
+            <h4>Circuit Schematic</h4>
+            <p>
+              <img src="app/images/circuits/FretBoard_schematic.jpg" alt="..." class="img-responsive">
             </p>
           </div>
           <div role="tabpanel" class="tab-pane" id="resources">
             <p>
-              resources
+              All the code and design details for The Fretboard are open-source.
+              Feel free to fork or borrow any ideas for your own build.
+              If you build anything similar, I'd love to hear about it -
+              you contact me through GitHub or on twitter
+              <a href="https://twitter.com/tardate">@tardate</a>
             </p>
+            <ul>
+              <li>
+                <a href="https://github.com/tardate/fretboard_web">fretboard_web</a>
+                - GitHub repository for this website, including build status proxy endpoint
+              </li>
+              <li>
+                <a href="https://github.com/tardate/LittleArduinoProjects/tree/master/FretBoard">FretBoard</a>
+                - GitHub repository for the Arduino code and circuit design
+              </li>
+            </ul>
           </div>
         </div>
 
