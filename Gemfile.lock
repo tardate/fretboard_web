@@ -30,6 +30,7 @@ GEM
     hitimes (1.2.2)
     i18n (0.7.0)
     json (1.8.2)
+    kgio (2.9.3)
     listen (2.8.5)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
@@ -53,6 +54,7 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    raindrops (0.13.0)
     rake (10.1.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
@@ -82,6 +84,10 @@ GEM
       hitimes
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    unicorn (4.8.3)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
 
 PLATFORMS
   ruby
@@ -94,3 +100,4 @@ DEPENDENCIES
   rake
   rspec
   sinatra
+  unicorn
