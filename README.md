@@ -1,7 +1,7 @@
 # Fretboard Web App
 [![Build Status](https://travis-ci.org/tardate/fretboard_web.svg?branch=master)](https://travis-ci.org/tardate/fretboard_web)
 
-This is a simple sinatra app that includes two components:
+This is a simple html and sinatra app that includes two components:
 
 * an informational web site hosted at [fretboard.tardate.com](http://fretboard.tardate.com).
 * a demonstration build status proxy, used to transform actual build status into a form easily consumed by the associated Arduino project.
@@ -41,7 +41,7 @@ Guard is included to for watching code and running specs as you go:
 
 ## Running Locally
 
-A sinatra web app is included in this repo for the purpose of hosting at [fretboard.tardate.com](http://fretboard.tardate.com).
+A sinatra web app is included in this repo for the purpose of simple hosting at providers like [heroku](http://heroku.com).
 
 To run the app locally:
 
@@ -55,6 +55,22 @@ The build status proxy will run by default at http://localhost:4567/status.csv
 You can use `curl` to inspect the raw build status response like this, which will also dump the response to `status.trace`:
 
     curl -i -0 --raw --trace status.trace "http://localhost:4567/status.csv"
+
+
+## Hosting
+
+I'm using GitHub Pages to host [fretboard.tardate.com](http://fretboard.tardate.com) directly from the GitHub repository.
+
+How does that work? GitHub Pages basically serves whatever you commit to the repo.
+For static HTML sites, that means simply adding an `index.html` to the root of the repo.
+
+GitHub now allows you to select the branch from which GitHub Pages are built.
+I've chosen to serve directly from the master branch.
+
+To host on a custom URL, just two steps:
+
+* in DNS, configure a CNAME to point to <username>.github.io
+* add a CNAME file to the repo root with the matching CNAME in DNS (GitHub does this for you automatically if you add the custom url in the web interface)
 
 
 ## Contributing
