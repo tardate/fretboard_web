@@ -95,9 +95,13 @@ PLATFORMS
 DEPENDENCIES
   activesupport
   guard-rspec
+  json
   nokogiri
   rack-test
   rake
   rspec
   sinatra
   unicorn
+
+BUNDLED WITH
+   1.14.6

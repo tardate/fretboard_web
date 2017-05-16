@@ -39,6 +39,31 @@ Guard is included to for watching code and running specs as you go:
     $ bundle exec guard
 
 
+## CI Server Integration
+
+Can be used with two CI servers: CruiseControl (XML response), and Circle CI (JSON response)
+
+### CruiseControl
+
+Set `type="xml"` e.g.
+
+```
+export FB_CI_SERVER_URL="https://your-ci-server.com/XmlStatusReport.aspx"
+export FB_CI_SERVER_TYPE=xml
+```
+
+### Circle CI
+
+Set `type="circleci"` e.g.
+
+```
+export FB_CI_SERVER_URL="https://circleci.com/api/v1.1/projects?circle-token=:token"
+export FB_CI_SERVER_TYPE=circleci
+```
+
+See [Circle CI API reference](https://circleci.com/docs/api/v1-reference/)
+
+
 ## Running Locally
 
 A sinatra web app is included in this repo for the purpose of simple hosting at providers like [heroku](http://heroku.com).

@@ -1,10 +1,5 @@
 $LOAD_PATH.unshift File.join(File.dirname(__FILE__), '.', 'lib')
 require 'sinatra'
-require 'active_support'
-require 'active_support/core_ext/hash/conversions'
-require 'nokogiri'
-require 'uri'
-require 'open-uri'
 require 'build_response'
 
 set :public_folder, File.dirname(__FILE__) + '/'
@@ -15,9 +10,13 @@ end
 
 get '/status.csv' do
   content_type 'text/csv'
-  BuildResponse.new(proxy_url).response
+  BuildResponse.get_instance(ci_server_url, ci_server_type).response
 end
 
-def proxy_url
-  ENV['FB_PROXY_URL']
+def ci_server_url
+  ENV['FB_CI_SERVER_URL']
+end
+
+def ci_server_type
+  ENV['FB_CI_SERVER_TYPE']
 end

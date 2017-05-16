@@ -3,6 +3,7 @@ gem 'sinatra'
 gem 'unicorn'
 gem 'activesupport'
 gem 'nokogiri'
+gem 'json'
 gem 'rake'
 gem 'rspec'
 
