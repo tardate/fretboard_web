@@ -36,7 +36,7 @@ describe "Sinatra App" do
           expect_any_instance_of(BuildResponse::CruiseControl).to receive(:status_report).and_return(mock_build_response)
           get '/status.csv'
           expect(last_response).to be_ok
-          expect(last_response.body).to eql "project_1,CheckingModifications,Failure\nproject_2,Sleeping,Success"
+          expect(last_response.body).to eql "project_1,CheckingModifications,Failure\nproject_2,Sleeping,Success\n"
         end
       end
     end

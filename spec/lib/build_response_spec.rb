@@ -29,7 +29,7 @@ describe BuildResponse do
         let(:mock_build_response) { mock_cruise_control_xml_status_response }
         it "returns results parsed into CSV" do
           expect(instance).to receive(:status_report).and_return(mock_build_response)
-          expect(subject).to eql "project_1,CheckingModifications,Failure\nproject_2,Sleeping,Success"
+          expect(subject).to eql "project_1,CheckingModifications,Failure\nproject_2,Sleeping,Success\n"
         end
       end
     end
@@ -46,7 +46,7 @@ describe BuildResponse do
         let(:mock_build_response) { mock_circle_ci_status_response(2) }
         it "returns results parsed into CSV" do
           expect(instance).to receive(:status_report).and_return(mock_build_response)
-          expect(subject).to eql "my-project-0,Building,Success\nmy-project-1,Sleeping,Failed"
+          expect(subject).to eql "my-project-0,Building,Success\nmy-project-1,Sleeping,Failed\n"
         end
       end
     end

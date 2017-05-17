@@ -54,7 +54,7 @@ class BuildResponse
     def to_csv
       to_hash['projects'].map do |project|
         [project['name'], project['activity'], project['lastBuildStatus']].join(',')
-      end.sort.join("\n")
+      end.sort.join("\n") + "\n"
     end
 
     # Returns a hash of projects with critical elements lastBuildStatus, name and activity
