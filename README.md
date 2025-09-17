@@ -1,5 +1,7 @@
 # Fretboard Web App
 
+[![Ruby Tests](https://github.com/tardate/fretboard_web/actions/workflows/ruby-tests.yml/badge.svg)](https://github.com/tardate/fretboard_web/actions/workflows/ruby-tests.yml)
+
 This is a simple html and sinatra app that includes two components:
 
 * an informational web site hosted at [fretboard.tardate.com](http://fretboard.tardate.com).
