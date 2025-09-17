@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe BuildResponse do
   let(:ci_server_url)  {  }
   let(:ci_server_type) {  }
@@ -50,7 +52,5 @@ describe BuildResponse do
         end
       end
     end
-
   end
-
 end

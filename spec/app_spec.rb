@@ -1,9 +1,10 @@
+require 'spec_helper'
+
 def app
   Sinatra::Application
 end
 
 describe "Sinatra App" do
-
   describe "GET '/'" do
     it "loads homepage" do
       get '/'
@@ -40,7 +41,5 @@ describe "Sinatra App" do
         end
       end
     end
-
   end
-
 end

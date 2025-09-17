@@ -1,2 +1,2 @@
-require './web_app'
+require './app'
 run Sinatra::Application
