@@ -1,7 +1,6 @@
-require 'sinatra'
-require "sinatra/base"
+ENV['RACK_ENV'] = 'test'
+require './app.rb'
 require 'rack/test'
-require './web_app.rb'
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.

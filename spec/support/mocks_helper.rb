@@ -1,5 +1,4 @@
 module MocksHelper
-
   def mock_cruise_control_xml_status_response
     %{<?xml version="1.0"?>
 <Projects>

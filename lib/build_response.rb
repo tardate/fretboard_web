@@ -9,7 +9,6 @@ require 'json'
 # If proxy_url is not defined, returns a dummy response instead
 # Currently it only knows how to handle the CruiseControl XmlStatusReport build format
 class BuildResponse
-
   # Returns an instance of the response builder based on ci_server_type
   def self.get_instance(ci_server_url, ci_server_type)
     klass = case "#{ci_server_type}".downcase
@@ -22,7 +21,6 @@ class BuildResponse
   end
 
   class Base
-
     attr_accessor :ci_server_url
 
     def initialize(ci_server_url=nil)
@@ -71,11 +69,9 @@ class BuildResponse
     def status_report
       open(ci_server_url).read
     end
-
   end
 
   class CruiseControl < Base
-
     def to_hash
       hash = Hash.from_xml to_xml
       {'projects' => hash['Projects']['Project']}
@@ -88,11 +84,9 @@ class BuildResponse
     def parser
       Nokogiri::XML status_report
     end
-
   end
 
   class CircleCi < Base
-
     # Parse projects response to standardised hash structure
     def to_hash
       results = JSON.parse(status_report)
@@ -110,8 +104,5 @@ class BuildResponse
       end.compact
       {'projects' => projects}
     end
-
   end
-
-
 end

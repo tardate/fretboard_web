@@ -1,13 +1,16 @@
 source 'https://rubygems.org'
-gem 'sinatra'
-gem 'unicorn'
+
 gem 'activesupport'
-gem 'nokogiri'
 gem 'json'
+gem 'nokogiri'
+gem 'puma'
+gem 'rackup'
 gem 'rake'
+gem 'rexml'
 gem 'rspec'
+gem 'sinatra'
 
 group :development, :test do
-  gem 'rack-test'
   gem 'guard-rspec'
+  gem 'rack-test'
 end
